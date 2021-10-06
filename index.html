@@ -6,10 +6,13 @@
   </head>
   <body>
     <header class="page-header">
+      <img class="logo" src="" alt="device">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link href="#" >"<input class="navigation-search" type="search" name="search" placeholder="Поиск по сайту"></a>
+            <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="get">
+              <input class="navigation-search" type="search" name="search" placeholder="Поиск по сайту">
+            </form>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Войти</a>
@@ -43,7 +46,6 @@
       <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
       <section class="slider">
         <h2 class="visually-hidden">Лучшие товары</h2>
-        <img class="slider-image" src="" alt="Товары">
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
@@ -52,50 +54,47 @@
         </button>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
-            <p class="slider-number">01</p>
-
-            <b class="slider-slogan">Порхает как бабочка,
-              жалит как пчела!</b>
+            <img class="slider-image" src="" alt="Товар 1">
+            <h3 class="slider-slogan">Порхает как бабочка,
+              жалит как пчела!</h3>
             <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="slider-link" href="#">Подробнее</a>
-            <br>
-            <b class="slider-specifications">800 м</b>
-            <p class="slider-specifications-text">Дальность полета</p>
-            <b class="slider-specifications">50 м</b>
-            <p class="slider-specifications-text">Радиус поражения</p>
+            <dl class="slider-specifications">
+              <dd class="slider-definition">800 м</dd>
+              <dt class="slider-term">Дальность полета</dt>
+              <dd class="slider-definition">50 м</dd>
+              <dt class="slider-term">Радиус поражения</dt>
+            </dl>
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
               <span class="visually-hidden">Товар 1</span>
             </button>
           </li>
           <li class="slider-pagination-item">
-            <p class="slider-number">02</p>
-
-            <b class="slider-slogan">Худеем
-              правильно!</b>
+            <img class="slider-image" src="" alt="Товар 2">
+            <h3 class="slider-slogan">Худеем правильно!</h3>
             <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="slider-link" href="#">Подробнее</a>
-            <br>
-            <b class="slider-specifications">48 часов</b>
-            <p class="slider-specifications-text">Без подзарядки</p>
+            <dl class="slider-specifications">
+              <dd class="slider-definition">48 часов</dd>
+              <dt class="slider-term">Без подзарядки</dt>
+            </dl>
             <button class="slider-pagination-button" type="button">
               <span class="visually-hidden">Товар 2</span>
             </button>
           </li>
           <li class="slider-pagination-item">
-            <p class="slider-number">03</p>
-
-            <b class="slider-slogan">Делай селфи,
-              как Бен Стиллер! </b>
-            <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-            </p>
+            <img class="slider-image" src="" alt="Товар 3">
+            <h3 class="slider-slogan">Делай селфи, как Бен Стиллер! </h3>
+            <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <a class="slider-link" href="#">Подробнее</a>
-            <br>
-            <b class="slider-specifications">8,5 м</b>
-            <p class="slider-specifications-text">Длина палки</p>
-            <b class="slider-specifications">5 кг</b>
-            <p class="slider-specifications-text">Вес палки</p>
-            <b class="slider-specifications">Карбон</b>
-            <p class="slider-specifications-text">Материал</p>
+            <dl class="slider-specifications">
+              <dd class="slider-definition">8,5 м</dd>
+              <dt class="slider-term">Длина палки</dt>
+              <dd class="slider-definition">5 кг</dd>
+              <dt class="slider-term">Вес палки</dt>
+              <dd class="slider-definition">Карбон</dd>
+              <dt class="slider-term">Материал</dt>
+            </dl>
             <button class="slider-pagination-button" type="button">
               <span class="visually-hidden">Товар 3</span>
             </button>
@@ -127,14 +126,36 @@
           </li>
         </ul>
       </section>
-
-
-
+      <section class="services">
+        <ul class="services-list">
+          <li class="services-item">
+            <button class="services-button services-button-current" type="button">Доставка</button>
+          </li>
+          <li class="services-item">
+            <button class="services-button" type="button">Гарантия</button>
+          </li>
+          <li class="services-item">
+            <button class="services-button" type="button">Кредит</button>
+          </li>
+        </ul>
+        <dl class="services-dictionary">
+          <dt class="services-term services-term-current">Доставка</dt>
+          <dd class="services-definition current">Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно! Ведь
+            мы неплохо заработаем, поднимая его на ваш этаж.</dd>
+            <dt class="services-term">Гарантия</dt>
+          <dd class="services-definition">Если из-за возгорания купленного у нас товара у вас
+            сгорит дом — не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же.</dd>
+            <dt class="services-term">Кредит</dt>
+          <dd class="services-definition">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</dd>
+        </dl>
+      </section>
       <section class="about">
         <h2 class="about-title">О нас</h2>
         <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p class="about-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-        <ul class="about-lis">
+        <ul class="about-list">
           <li class="about-item">Меловые линии</li>
           <li class="about-item">СДИК</li>
           <li class="about-item">ТоксБерри</li>
@@ -143,9 +164,13 @@
       </section>
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
+        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.
+          Заодно, сможете проверить работоспособность покупки. </p>
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
         <address class="contacts-address">
-          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
+            <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+          </p>
           <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
         <h3 class="contacts-subtitle">Время работы</h3>
@@ -156,7 +181,7 @@
         <a class="contacts-link" href="#">Напишите нам</a>
       </section>
       <section class="mailing">
-        <h2 mailing-title>Подпишитесь<br>на рассылку</h2>
+        <h2 mailing-title>Подпишитесь на рассылку</h2>
         <p class="mailing-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="mailing-mail" type="email" name="email" placeholder="Ваш e-mail">
@@ -166,7 +191,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-adress">
+      <img class="logo" src="" alt="device">
+      <section class="footer-address">
         <h2 class="visually-hidden">Адрес</h2>
         <address class="footer-address">
           <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -174,7 +200,7 @@
       </section>
       <section class="footer-info">
         <h2 сlass="visually-hidden">Доставка Гарантия Контакты</h2>
-        <ul class="futer-info-list">
+        <ul class="footer-info-list">
           <li class="footer-info-item">
             <a class="footer-info-link" href="#">Доставка</a>
           </li>
@@ -188,7 +214,7 @@
       </section>
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="futer-social-list">
+        <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="#">
               <span class="visually-hidden">Facebook</span>

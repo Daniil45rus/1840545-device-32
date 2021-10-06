@@ -54,7 +54,7 @@
           </li>
         </ul>
       </header>
-      <section class="catalog-products">
+      <aside class="catalog-filters">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -77,22 +77,19 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="Black" checked>
-                  <span class="control-mark"></span>
+                  <input class="visually-hidden control-input" type="checkbox" name="black" checked>
                   <span class="control-label">Черный</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="White" checked>
-                  <span class="control-mark"></span>
+                  <input class="visually-hidden control-input" type="checkbox" name="white" checked>
                   <span class="control-label">Белый</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="Blue">
-                  <span class="control-mark"></span>
+                  <input class="visually-hidden control-input" type="checkbox" name="blue">
                   <span class="control-label">Синий</span>
                 </label>
               </li>
@@ -133,20 +130,21 @@
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
+      </aside>
+      <section class="catalog-products"></section>
         <form class="sorting-type">
           <label class="sorting-text" for="sorting">Сортировка:</label>
           <select class="select-control" id="sorting" name="sorting">
             <option value="popular">Сначала популярные</option>
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
+            <option value="cheap">Сортировать по цене</option>
           </select>
           <button class="visually-hidden" type="submit">Отсортировать товары</button>
-          <button class="sorting-arrow" type="button">
-            <span class="visually-hidden">Промотать вверх</span>
-          </button>
-          <button class="sorting-arrow" type="button">
-            <span class="visually-hidden">Промотать вниз</span>
-          </button>
+          <a class="sorting-arrow button" href="#">
+            <span class="visually-hidden">Сначала дешёвые</span>
+          </a>
+          <a class="sorting-arrow button" href="#">
+            <span class="visually-hidden">Сначала дорогие</span>
+          </a>
         </form>
 
         <ul class="product-list">
@@ -183,21 +181,27 @@
             <a href="#" class="product-card-button button">Подробнее</a>
           </li>
         </ul>
+        <button class="button pagination-show-more" type="button">Загрузить еще</button>
         <ul class="pagination">
-          <button class="button pagination-show-more" type="button">Загрузить еще</button>
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
               <span class="pagination-text">Назад</span>
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link pagination-current" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current" href="#">15</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
