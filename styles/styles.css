@@ -34,7 +34,14 @@
    url("../fonts/rubik/rubik-800.woff2") format("woff");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -50,17 +57,37 @@ a{
   background: #FFE17F;
   color: #000000;
 }
-.navigation-link-1{
+.main-container {
+  flex-grow: 1;
+}
+.page-container{
+  width: 1160px;
+  margin: 0 auto;
+}
+.navigation{
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.navigation-list{
+  margin: 0;
+  padding: 0;
+}
+.small .navigation-link{
   font-size: 16px;
   line-height: 19px;
   color: inherit;
   text-align: left;
 }
-.navigation-link-2{
+.large .navigation-link{
   font-family: "Raleway", sans-serif;
-  color: inherit;
   text-transform: uppercase;
   text-align: left;
+}
+.slider-pagination{
+  margin:0;
+  padding: 0;
 }
 .slider-slogan{
   font-family: "Raleway", sans-serif;
@@ -84,7 +111,16 @@ a{
   background-color: #FFE17F;
   color: #000000;
 }
-
+.products-list{
+  display:flex;
+  justify-content: space-between;
+  margin:0;
+  padding: 0;
+  text-align: center;
+}
+.products-item{
+  width: 160px;
+}
 .products-link{
   font-family: "Raleway", sans-serif;
   line-height: 24px;
@@ -130,7 +166,14 @@ h2{
   line-height: 50px;
   color: #000000;
 }
+.index-columns{
+  display: flex;
+  justify-content: space-between;
+}
+.about{
+  width: 560px;
 
+}
 .about-item{
   line-height: 20px;
   color: #000000;
@@ -143,6 +186,9 @@ h2{
   text-transform: uppercase;
   background-color: #FFE17F;
   color: #000000;
+}
+.contacts{
+  width: 560px;
 }
 .contacts-subtitle{
   font-weight: bold;
@@ -178,6 +224,23 @@ h2{
   background-color: #444444;
   color:#FFFFFF;
 }
+.page-footer-container{
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+.footer-address{
+  width:238px;
+  margin-right: 114px;
+}
+.footer-navigation{
+  width: 458px;
+}
+.footer-contacts{
+  width: 293px;
+  margin-left: auto;
+}
+
 .footer-info-link{
   font-family: Raleway;
   font-style: normal;
@@ -194,6 +257,13 @@ h2{
   line-height: 19px;
   color: #000000;
 }
+.catalog{
+  display: flex;
+}
+.catalog-filter{
+  width: 200px;
+  margin-right: 69px;
+}
 .breadcrumbs{
   opacity: 0.6;
 }
@@ -204,6 +274,9 @@ h2{
 }
 .filters{
   background-color: #E5E5E5;
+}
+.catalog-products{
+  width: 760px;
 }
 .catalog-filter-title{
   font-weight: bold;
