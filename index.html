@@ -45,7 +45,7 @@
                   <ul class="cart-list">
                     <li class="cart-list-item">
                       <a class="cart-list-link" href="">
-                        <img class="cart-prod" width="41" height="43" src="img/product/product-1.jpg">
+                        <img class="cart-prod" width="41" height="43" src="img/product/product-1.jpg" alt="Любительская селфи-палка">
                         Любительская<br>селфи-палка
                       </a>
                       <button type="button" class="cart-del">
@@ -55,7 +55,7 @@
                     </li>
                     <li class="cart-list-item">
                       <a class="cart-list-link" href="">
-                        <img class="cart-prod" width="41" height="43" src="img/product/product-2.jpg">
+                        <img class="cart-prod" width="41" height="43" src="img/product/product-2.jpg" alt="Профессиональная селфи-палка">
                         Профессиональная селфи-палка
                       </a>
                       <button type="button" class="cart-del">
@@ -81,7 +81,7 @@
                 Каталог товаров
                 <span class="catalog-button"></span>
               </a>
-              <div class="pop-catalog pop-active">
+              <div class="pop-catalog">
                 <ul class="subcatalog">
                   <li class="subcatalog-item">
                     <a class="subcatalog-link" href="#">Виртуальная реальность</a>
@@ -418,7 +418,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-window">
+    <div class="modal-window modal-no-active">
       <div class="modal modal-delivery">
         <button class="modal-close" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -428,29 +428,42 @@
           <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-delivery-form-div">
               <p class="modal-delivery-title">Ваше имя:</p>
-              <label class="modal-delivery-form-label modal-delivery-form-label-name">
-                <input class="modal-delivery-input" type="text" name="name" placeholder="Имя Фамилия">
+              <label class="modal-delivery-form-label">
+                <input class="modal-delivery-input modal-delivery-input-name" type="text" name="name" placeholder="Имя Фамилия">
               </label>
               <span class="label-inscription label-inscription-name">Пожалуйста, представьтесь</span>
             </div>
             <div class="modal-delivery-form-div">
               <p class="modal-delivery-title">Ваш e-mail:</p>
-              <label class="modal-delivery-form-label modal-delivery-form-label-mail">
-                <input class="modal-delivery-input" type="email" name="mail" placeholder="example@mail.ru">
+              <label class="modal-delivery-form-label">
+                <input class="modal-delivery-input modal-delivery-input-mail" type="email" name="mail" placeholder="example@mail.ru">
               </label>
               <span class="label-inscription">Забавный у вас адрес</span>
             </div>
             <div class="modal-delivery-form-div">
               <p class="modal-delivery-title">Что нужно привезти:</p>
-              <label class="modal-delivery-form-label modal-delivery-form-label-composition">
-                <input class="modal-delivery-input" type="text" name="composition" placeholder="В свободной форме">
+              <label class="modal-delivery-form-label">
+                <input class="modal-delivery-input modal-delivery-input-composition" type="text" name="composition" placeholder="В свободной форме">
               </label>
             </div>
             <div class="modal-delivery-form-div">
               <p class="modal-delivery-title">Количество:</p>
-              <label class="modal-delivery-form-label modal-delivery-form-label-total">
-                <input class="modal-delivery-input" type="number" name="total" value="1" min="1" max="99">
+              <div class="modal-total-info">
+                <svg class="total-info" aria-hidden="true" focusable="false" width="2" height="12"  xmlns="http://www.w3.org/2000/svg"><g><path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g></svg>
+                <p class="total-info-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.
+                </p>
+              </div>
+              <button class="modal-total modal-total-minus button" type="button">
+                <span class="visually-hidden">Убавить</span>
+                <svg class="modal-total-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H0V9H16V7Z"/></svg>
+              </button>
+              <label class="modal-delivery-form-label">
+                <input class="modal-delivery-input modal-delivery-input-total" type="number" name="total" value="1" min="1" max="99">
               </label>
+              <button class="modal-total modal-total-plus button" type="button">
+                <span class="visually-hidden">Прибавить</span>
+                <svg class="modal-total-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z"/></svg>
+              </button>
             </div>
             <button class="modal-delivery-button button" type="submit">Отправить</button>
           </form>
